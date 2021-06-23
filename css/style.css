@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main-container-block {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  background: -moz-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
+  background: -webkit-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
+  background: -ms-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
+   z-index: 410;
+  background-image: url(../icons/BackfroundImageHeadear.png);
+
+}
+header .div {
+  width: 1000px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  border: red 2px solid;
+}
+
+header .div a {
+  font-size: 34px;
+  font-family: "Raleway";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: right;
+  text-decoration: none;
+  display: flex;
+
+  
+}
+
+header .div a svg {
+fill: currentColor;
+}
+
+.page-header-list {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+ 
+}
+
