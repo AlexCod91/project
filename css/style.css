@@ -1,14 +1,41 @@
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('../fonts/montserrat-regular.eot');
+    src: url('../fonts/montserrat-regular.eot') format('embedded-opentype'),
+         url('../fonts/montserrat-regular.woff2') format('woff2'),
+         url('../fonts/montserrat-regular.woff') format('woff'),
+         url('../fonts/montserrat-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'raleway';
+    src: url('./raleway-regular.eot');
+    src: url('../fonts/raleway-regular.eot') format('embedded-opentype'),
+         url('../fonts/raleway-regular.woff2') format('woff2'),
+         url('../fonts/raleway-regular.woff') format('woff'),
+         url('../fonts/raleway-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body {
   margin: 0;
   width: 100%;
   height: 100%;
 }
 
-.main-container-block {
+.main__container__block {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
+
+
 header {
   width: 100%;
   height: auto;
@@ -19,16 +46,18 @@ header {
   background: -moz-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
   background: -webkit-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
   background: -ms-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
-   z-index: 410;
-  background-image: url(../icons/BackfroundImageHeadear.png);
-
+  background-image: url(../assets/BackfroundImageHeadear.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-header .div {
-  width: 1000px;
+.nav__block {
+  width: 1200px;
   height: auto;
   display: flex;
-  justify-content: center;
-  border: red 2px solid;
+  justify-content: space-between;
+  margin-right: 45px;
+  border: red 4px solid;
+  margin-top: 110px;
 }
 
 header .div a {
@@ -38,7 +67,7 @@ header .div a {
   line-height: 1.2;
   text-align: right;
   text-decoration: none;
-  display: flex;
+ 
 
   
 }
@@ -46,12 +75,28 @@ header .div a {
 header .div a svg {
 fill: currentColor;
 }
+header .div a span {
+  color: brown;
+}
 
 .page-header-list {
   width: auto;
   display: flex;
   justify-content: space-between;
   color: rgb(255, 255, 255);
- 
+ margin-right: 20px;
 }
+
+.page-header-list li {
+  margin-right: 20px;
+}
+.page-header-list li:last-child {
+  margin: 0;
+}
+
+header .div button {
+ background: none;
+
+
+} 
 
