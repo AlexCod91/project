@@ -1,10 +1,11 @@
+@import url(../css/fonts.css);
 body {
   margin: 0;
   width: 100%;
   height: 100%;
 }
 
-.main-container-block {
+.main__container__block {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
@@ -12,26 +13,30 @@ body {
 header {
   width: 100%;
   height: auto;
-  padding: 50px;
+  padding: 40px 150px 40px 150px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   background: -moz-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
   background: -webkit-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
   background: -ms-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
-   z-index: 410;
-  background-image: url(../icons/BackfroundImageHeadear.png);
+  background-image: url(../assets/DackgroundHeader.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
 
 }
-header .div {
-  width: 1000px;
+.page__logo {
+  width: auto;
   height: auto;
   display: flex;
-  justify-content: center;
-  border: red 2px solid;
+  justify-content:space-between;
+  margin: 0 124px 286px 126px ;
+  align-items: center;
 }
 
-header .div a {
+.header__logo {
   font-size: 34px;
   font-family: "Raleway";
   color: rgb(255, 255, 255);
@@ -39,19 +44,167 @@ header .div a {
   text-align: right;
   text-decoration: none;
   display: flex;
+  margin-right: 219px;
+  align-items: center;
+
+  
+}
+.header__logo:hover{
+  color: #998675;
+}
+
+.header__logo:active {
+  color: #ffffff;
+}
+
+
+.header__logo svg {
+fill: currentColor;
+ 
+}
+
+
+
+.header__list a {
+  
+  justify-content: space-between;
+  width: auto;
+  text-decoration: none;
+  color:  #ffffff;
+  margin-right: 30px;
+  
+}
+.header__list a:last-child {
+  margin-right: 63px;
+}
+
+.header__list a:hover {
+  color: #998675;
+}
+
+.header__list a:active {
+  color: #ffffff;
+}
+
+.header__icons{
+  background: transparent;
+  border: 0;
+  fill: #ffffff;
+  
+  
+}
+.header__icons svg {
+  margin-right: 28px ;
+}
+
+.header__icons svg:last-child {
+  margin: 0;
+}
+
+.header__icons svg:hover {
+  color: #998675;
+}
+
+input[type="search"] {
+  width: 40px;
+  height: 40px;
+  outline: none;
+  background-image: url('https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_960_720.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid gray;
+  background-color: #998675;
+  
+}
+
+input[type="search"]:focus {
+  width: 400px;
+  transition: width 1s ease-out;
+  background-position: right;
+
+   /* end logo, nav, search*/
+}
+.carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  
+}
+
+.carousel__text {
+  width: auto;
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+
+}
+.carousel__title__t2 {
+  font-weight: 900;
+  font-size: 50px;
+  margin: 0;
+}
+
+.left__arrow {
+ fill: #ffffff;
+ position: absolute;
+ left: 150px;
+}
+
+.left__arrow:hover {
+
+fill:  #998675;
+}
+
+.left__arrow:active {
+fill: #ffffff;
+}
+
+.right__arrow {
+fill: #ffffff;
+position: absolute;
+right: 150px;
+
+}
+
+.right__arrow:hover {
+fill:  #998675;
+}
+.right__arrow:active {
+fill: #ffffff;
+}
+
+.carousel button {
+  margin: 0 auto;
+}
+
+.pagination {
+  width: 100%;
+   display: flex;
+  justify-content: center;
+  margin-top: 327px;
 
   
 }
 
-header .div a svg {
-fill: currentColor;
+.pagination-item {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  margin-right: 10px;
 }
 
-.page-header-list {
-  width: auto;
-  display: flex;
-  justify-content: space-between;
-  color: rgb(255, 255, 255);
- 
+.pagination-item:hover {
+  background-color: transparent;
+  border: 2px solid #d3c1ad;
+  transform: scale(1.2);
 }
+
+
 
