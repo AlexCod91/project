@@ -390,13 +390,6 @@ input[type="search"]:focus {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 300px;
-  padding: 10px 10px 0 10px;
-  box-sizing: border-box;
-  */
   margin-right: 33px;
 }
 
@@ -789,7 +782,8 @@ input[type="search"]:focus {
 }
 
 .inform .article-section .article-block article div h2 {
-  margin: 30px 0 0 28px;
+  padding-top: 30px;
+  margin: 0 0 0 28px;
   font-family: Raleway;
   font-size: 20px;
   font-weight: 500;
@@ -809,7 +803,8 @@ input[type="search"]:focus {
   line-height: 1.43;
   letter-spacing: normal;
   color: #d1d1d1;
-  margin: 14px 0 27px 28px;
+  margin: 14px 0 0 28px;
+  padding-bottom: 27px;
 }
 
 .inform .article-section .more {
@@ -877,5 +872,178 @@ input[type="search"]:focus {
       -ms-grid-row-align: center;
       align-self: center;
   width: 100px;
+  background-color: none;
+}
+
+.home__description__block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.home__description__block div {
+  width: 100%;
+  max-width: 660px;
+  float: left;
+}
+
+.home__description__block div h1 {
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #555555;
+}
+
+.home__description__block div p {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  text-align: left;
+  color: #8c8c8c;
+}
+
+.home__description__block div ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.home__description__block div li {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #8c8c8c;
+  position: relative;
+  padding-left: 129px;
+}
+
+.home__description__block div li:before {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 21px;
+  background-image: url(/assets/right__arrow__small.png);
+  position: absolute;
+  background-size: cover;
+  left: 79px;
+}
+
+img {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 79px;
+  margin-right: 31px;
+}
+
+/* end home description block */
+.home__count {
+  width: 100%;
+  height: 300px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 69px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, right top, left top, from(#4e3427), to(#211b19));
+  background: linear-gradient(to left, #4e3427, #211b19);
+}
+
+.home__count div {
+  width: 125px;
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-right: 150px;
+}
+
+.home__count div:last-child {
+  margin: 0;
+}
+
+.home__count div:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #f1eee9;
+  margin: auto;
+}
+
+.home__count span {
+  height: 34px;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 200;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.75;
+  letter-spacing: normal;
+  color: #ffffff;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.home__count h4 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+svg {
+  fill: #ffffff;
+}
+
+.home__count__block:hover {
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.home__count__block:hover svg {
+  fill: #c7b299;
+}
+
+.home__count__block:hover h4 {
+  color: #c7b299;
 }
 /*# sourceMappingURL=style.css.map */
